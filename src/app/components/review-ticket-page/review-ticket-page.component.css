@@ -1,0 +1,11 @@
+h2 {
+  text-align: center;
+}
+
+.card.rounded.shadow.col-lg-6 {
+  padding: 0;
+}
+
+.card {
+  background-color: rgba(250, 235, 215, 0);
+}

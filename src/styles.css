@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+button.btn {
+  border: none !important;
+  background-color: #29d !important;
+}
+
+.card-header {
+  background-color: #29d !important;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav {
+  border-bottom: 2px solid #29d;
+}
+
+.table {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
+thead {
+  background-color: #29d;
+  color: #fff;
+}

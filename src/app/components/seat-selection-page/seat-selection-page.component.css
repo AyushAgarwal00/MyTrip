@@ -1,0 +1,20 @@
+.col-md-2 {
+  padding: 0px;
+  padding-top: -10px;
+}
+
+
+.card {
+  padding: 0;
+  height: 67vh;
+}
+
+.fare {
+  padding: 10px;
+  background-color: #86bfe054;
+}
+
+.alert {
+  position: absolute;
+  z-index: 999999;
+}

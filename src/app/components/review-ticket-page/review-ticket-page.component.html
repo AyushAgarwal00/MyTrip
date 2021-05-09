@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="card rounded shadow col-lg-6">
+      <div class="card-header">
+        <h5>Journey Details</h5>
+      </div>
+      <div class="card-body">
+        {{ bus.from }} To {{ bus.destination }}
+        <br />
+        Date & Time : {{ date }} : {{ bus.deptTime }}
+        <br />
+        {{ bus.busName }}
+        <br />
+        Coach Type: {{ bus.coachType }}
+        <br />
+        Seats No:
+
+        <span *ngFor="let item of checkedSeats">{{ item }}, </span>
+      </div>
+
+      <button class="btn btn-primary" (click)="goToViewTicket()">
+        Proceed
+      </button>
+    </div>
+  </div>
+</div>

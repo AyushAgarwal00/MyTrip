@@ -1,0 +1,23 @@
+.hero{
+    /* background-image: url("https://gst-contracts.s3.amazonaws.com/uploads/bcc/cms/asset/avatar/5869/banner_banner.jpg"); */
+    /* background-color: aqua; */
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ca944688226269.5dcfdc104fc7c.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 88vh;
+}
+
+  
+  .card {
+    background-color: #00000063;
+    color: #fff;
+  }
+
+  .alert{
+    position: absolute;
+    z-index: 9999;
+  }
+
+  .card-header{
+    background-color: #0000 !important ;
+  }

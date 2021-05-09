@@ -1,0 +1,65 @@
+<div>
+  <div>
+    <h4 class="text-center pt-3 pb-3">Please select your seats</h4>
+    <hr />
+  </div>
+
+  <div class="container">
+    <div class="alert alert-danger" role="alert" *ngIf="maxSeatSelected">
+      You can select Max 4 seats
+    </div>
+    <div class="row">
+      <div class="card rounded shadow col-md-3">
+        <div class="card-header">
+          <h6>Select Seats</h6>
+        </div>
+        <div class="card-body p-0">
+          <i class="fas fa-bus-alt pl-2"></i>
+          <li class="row justify-content-center" *ngFor="let item of seatMatrix">
+            <span *ngFor="let i of item">
+              <div class="col-md-2">
+                <span class="seat">
+                  <input type="checkbox" id={{i.id}} [(ngModel)]="i.isChecked" (change)="onUpdate(i)" style="display: none;"/>
+                  <label for={{i.id}}> <img src="assets/img/seat1.png" class="seatImages" id={{i.id}}i ></label> 
+                </span>
+              </div>
+            </span>
+          </li>
+
+        </div>
+      </div>
+
+      <div class="col-md-2"></div>
+
+      <div class="card rounded shadow col-md-7">
+        <div class="card-header">Your Fare</div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Seats</th>
+                <th>Fare</th>
+                <th>Class</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let b of checkedSeats">
+                <td>{{ b }}</td>
+                <td>{{ selectedBus[0].fare | currency: "INR" }}</td>
+                <td>
+                  <h6>Economy</h6>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="fare">
+          Total Fare is : {{ totalCost | currency: "INR" }}
+        </div>
+        <button class="btn btn-primary" [disabled]="noSeatSelected || maxSeatSelected" (click)="goToUserInfoPage()">
+          Confirm
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

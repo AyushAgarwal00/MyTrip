@@ -1,0 +1,101 @@
+[
+  {
+    "destination": "Pune",
+    "from": "Banglore",
+    "busName": "Green Line",
+    "deptTime": "10:00 PM",
+    "coachType": "AC",
+    "totalSeats": "36",
+    "fare": "1000"
+  },
+  {
+    "destination": "Jaipur",
+    "from": "Pune",
+    "busName": "Silver Line",
+    "deptTime": "11:00 PM",
+    "coachType": "Non AC",
+    "totalSeats": "36",
+    "fare": "800"
+  },
+  {
+    "destination": "Banglore",
+    "from": "Jaipur",
+    "busName": "Green Line",
+    "deptTime": "12:00 PM",
+    "coachType": "AC",
+    "totalSeats": "36",
+    "fare": "800"
+  },
+  {
+    "destination": "Goa",
+    "from": "Chennai",
+    "busName": "Gold Line",
+    "deptTime": "01:00 PM",
+    "coachType": "AC",
+    "totalSeats": "36",
+    "fare": "1000"
+  },
+  {
+    "destination": "Chennai",
+    "from": "Goa",
+    "busName": "Star Line",
+    "deptTime": "11:00 AM",
+    "coachType": "AC",
+    "totalSeats": "36",
+    "fare": "1000"
+  },
+  {
+    "destination": "Hyderabad",
+    "from": "Banglore",
+    "busName": "Green Line",
+    "deptTime": "08:00 PM",
+    "coachType": "AC",
+    "totalSeats": "36",
+    "fare": "1000"
+  },
+  {
+    "destination": "Pune",
+    "from": "Mumbai",
+    "busName": "Green Line",
+    "deptTime": "10:00 AM",
+    "coachType": "Non AC",
+    "totalSeats": "36",
+    "fare": "1000"
+  },
+  {
+    "destination": "Jaipur",
+    "from": "Pune",
+    "busName": "Star Line",
+    "deptTime": "10:30 AM",
+    "coachType": "AC",
+    "totalSeats": "36",
+    "fare": "1000"
+  },
+  {
+    "destination": "Bangalore",
+    "from": "Mumbai",
+    "busName": "Green Line",
+    "deptTime": "10:00 PM",
+    "coachType": "Non AC",
+    "totalSeats": "36",
+    "fare": "1000"
+  },
+  {
+    "destination": "Goa",
+    "from": "Mumbai",
+    "busName": "Gold Line",
+    "deptTime": "10:00 PM",
+    "coachType": "AC",
+    "totalSeats": "36",
+    "fare": "1000"
+  },
+  {
+    "destination": "Mumbai",
+    "from": "Jaipur",
+    "busName": "Green Line",
+    "deptTime": "10:00 PM",
+    "coachType": "AC",
+    "totalSeats": "36",
+    "fare": "1000"
+  }
+]

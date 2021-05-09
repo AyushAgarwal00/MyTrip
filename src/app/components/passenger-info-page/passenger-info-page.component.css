@@ -1,0 +1,26 @@
+h2 {
+  text-align: center;
+}
+
+.card.rounded.shadow.col-lg-6 {
+  padding: 0;
+}
+
+.card {
+  background-color: rgba(250, 235, 215, 0);
+}
+
+input.ng-invalid.ng-dirty {
+  border: 1px solid red;
+  box-shadow: 0 0 10px #ce7171;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+  box-shadow: 0 0 10px #ce7171;
+}
+
+input.ng-valid {
+  border: 1px solid green;
+  box-shadow: 0 0 10px #17c500;
+}

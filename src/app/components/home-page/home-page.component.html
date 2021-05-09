@@ -1,0 +1,52 @@
+<div class="hero">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="alert alert-danger col-sm-6" role="alert" *ngIf="invalidDate">
+        Enter a valid Date
+      </div>
+      <div class="card rounded shadow col-lg-6 mt-5">
+        <div class="card-header">
+          <h4>Search Buses</h4>
+        </div>
+        <div class="card-body">
+          <form #f="ngForm">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label>Leaving from</label>
+                <select name="leaving_form" required ngModel class="form-control form-control-sm"
+                  [(ngModel)]="goingFrom" (ngModelChange)="onChange()">
+                  <option value="">Select Place</option>
+                  <option *ngFor="let city of busCities" [value]="city" selected>
+                    {{ city }}
+                  </option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label>Going To</label>
+
+                <select name="going_to" required class="form-control form-control-sm" [(ngModel)]="goingTo">
+                  <option value="">Select Place</option>
+
+                  <option *ngFor="let city of destinationCities" [value]="city">
+                    {{ city }}
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-md-12">
+                <label for="">Departing On</label>
+                <input type="date" required class="form-control form-control-sm" ngModel name="depart_date"
+                  [(ngModel)]="busDate" (ngModelChange)="getTodaysDate()" min="{{today|date:'yyyy-MM-dd'}}"/>
+              </div>
+            </div>
+            <button [disabled]="!f.valid || invalidDate" class="btn btn-primary btn-block mt-3 btn-search btn-sm"
+              (click)="searchBus()">
+              <i class="fas fa-search-location"></i> Search Buses
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -14,6 +14,8 @@ import { ViewTicketPageComponent } from './components/view-ticket-page/view-tick
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ColorDirective } from './color.directive';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+import { LoginComponent } from './components/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -28,14 +30,16 @@ import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
     PassengerInfoPageComponent,
     ReviewTicketPageComponent,
     ViewTicketPageComponent,
-    ColorDirective
+    ColorDirective,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    LoadingBarRouterModule
+    LoadingBarRouterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

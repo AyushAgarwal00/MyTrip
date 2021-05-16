@@ -1,0 +1,88 @@
+<div class="container">
+  <div class="alert alert-danger" role="alert" *ngIf="err">
+    {{ err }}
+  </div>
+
+  <div class="alert alert-info" role="alert" *ngIf="loading">
+    Signing in....
+  </div>
+
+  <div class="alert alert-success" role="alert" *ngIf="success && loginMode">
+    Login Success, Redirecting ......
+  </div>
+
+  <div class="alert alert-success" role="alert" *ngIf="success && !loginMode">
+    SignUp Success, Redirecting ......
+  </div>
+
+ 
+
+  <div class="row justify-content-center">
+    <div class="col-md-9 col-lg-12 col-xl-10">
+      <div class="card shadow-lg o-hidden border-0 my-5">
+        <div class="card-body p-0">
+          <div class="row">
+            <div class="col-lg-6 d-none d-lg-flex">
+              <div
+                class="flex-grow-1 bg-login-image"
+                style="background-image: url('assets/img/bus.jpg'); background-size: cover; background-position: right;"
+              ></div>
+            </div>
+            <div class="col-lg-6">
+              <div class="p-5">
+                <div class="text-center">
+                  <h4 class="text-dark mb-4">{{loginMode? 'Welcome Back': 'Create Account'}}</h4>
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
+                  <div class="form-group">
+                    <input
+                      class="form-control form-control-user"
+                      type="email"
+                      id="exampleInputEmail"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter Email Address..."
+                      name="email"
+                      formControlName="email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      class="form-control form-control-user"
+                      type="password"
+                      id="exampleInputPassword"
+                      placeholder="Password"
+                      name="password"
+                      formControlName="password" 
+                    />
+                  </div>
+                 
+                  <button
+                    class="btn btn-primary btn-block text-white btn-user"
+                    type="submit"
+                  >
+                  {{loginMode? 'Login': 'Create Account'}} 
+                  </button>
+                  <hr />
+                  
+                </form>
+                <div class="text-center">
+                    <p class="mb-0 mt-2">
+                        {{loginMode? 'Dont`t have account?': 'Already have account?'}}
+                        <button (click)="onModeSwitch()" class="btn btn-primary text-white">
+                            {{loginMode? 'Create one': 'Sign In'}}
+                           </button> 
+                      </p>
+                    
+                </div>
+                
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

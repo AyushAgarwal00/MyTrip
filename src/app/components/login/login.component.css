@@ -1,0 +1,23 @@
+input.ng-invalid.ng-dirty  
+{
+    border:1px solid red;
+    box-shadow: 0 0 10px #ce7171;
+}
+
+input.ng-valid
+{
+    border:1px solid green;
+    box-shadow: 0 0 10px #17c500;
+}
+
+password.ng-invalid.ng-dirty  
+{
+    border:1px solid red;
+    box-shadow: 0 0 10px #ce7171;
+}
+
+password.ng-valid
+{
+    border:1px solid green;
+    box-shadow: 0 0 10px #1df700;
+}
